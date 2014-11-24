@@ -1,0 +1,23 @@
+body{
+    width: 400;
+    margin: 0 auto;
+}
+.done {
+    background: #00c159;
+}
+.ip {
+    width: 45px;
+}
+button {
+    background: #00c159;
+    height: 50px;
+    width: 100%;
+    font-size: 20;
+    align-self: center;
+}
+.center{
+    align-self: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}

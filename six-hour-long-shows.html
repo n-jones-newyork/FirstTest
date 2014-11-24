@@ -1,0 +1,49 @@
+<!doctype>
+<head>
+    <title>Six Hour Long Shows</title>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/Roku.js"></script>
+    <script src="scripts/play_shows_logic.js"></script>
+    <link rel="stylesheet" href="style/play_shows_style.css"/>
+</head>
+<body>
+    <h1>Six Hour Long Shows</h1>
+    <h2>Send Commands to Roku At:</h2>
+    <label>IP address:</label>
+        <input class="ip" id="ip1" type="number" min="0" max="255" value="192"/>.
+        <input class="ip" id="ip2" type="number" min="0" max="255" value="168"/>.
+        <input class="ip" id="ip3" type="number" min="0" max="255" value="2"/>.
+        <input class="ip" id="ip4" type="number" min="0" max="255" value="40"/><br/>
+    
+    <h2>Scheduled Commands</h2>
+    <table>
+        <tr>
+            <td><label>First Hour</label></td>
+            <td><select class="action_selector" minute_delay="000"></select></td>
+        </tr>
+        <tr>    
+            <td><label>Second Hour:</label></td>
+            <td><select class="action_selector" minute_delay="060"></select></td>
+        </tr>
+        <tr>
+            <td><label>Third Hour:</label></td>
+            <td><select class="action_selector" minute_delay="120"></select></td>
+        </tr>
+        <tr>
+            <td><label>Fourth Hour:</label></td>
+            <td><select class="action_selector" minute_delay="180"></select></td>
+        </tr>
+        <tr>
+            <td><label>Fifth Hour:</label></td>
+            <td><select class="action_selector" minute_delay="240"></select></td>
+        </tr>
+        <tr>
+            <td><label>Sixth Hour:</label></td>
+            <td><select class="action_selector" minute_delay="300"></select></td>
+        </tr>
+    </table>
+    
+    
+    <h2>Press "GO!" to begin.</h2>
+    <button id="go">GO!</button>
+</body>
